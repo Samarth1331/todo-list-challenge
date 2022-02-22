@@ -6,13 +6,11 @@ import './App.scss'
 
 export default function App() {
   return (
-    <div className='app'>
-      <Router>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/todo-list' component={TodoList} />
-        </Switch>
-      </Router>
+    <div className='app'>      
+      <div>
+        <TodoList></TodoList>
+      </div>
     </div>
+
   )
 }
